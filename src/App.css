@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  height: 100px;
+  background-color: #333;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Jobs {
+  width: 1020px;
+  margin-left: calc(100% / 4);
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.job {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin: 52px 20px 20px 0;
+}
+.job h2 {
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.job p {
+  font-size: 18px;
+  margin-bottom: 16px;
+  margin-left: 10px;
+}
+
+.red {
+  border: 10px solid #e30413;
+}
+
+.green {
+  border: 10px solid #3ea535;
+}
+
+.blue {
+  border: 10px solid #039fe3;
+}
+.yellow {
+  border: 10px solid #ffee00;
+}
+.beige {
+  border: 10px solid #f8c5af;
+}
+
+footer {
+  height: 63px;
+  background-color: #dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 18px;
+}
+.bold {
+  font-weight: bold;
 }
